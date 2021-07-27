@@ -9,10 +9,10 @@ plugins {
 dependencies {
     implementation("org.apache.commons:commons-text")
     val lwjglVersion = "2.7.1"
-    compile("org.lwjgl:lwjgl:$lwjglVersion}")
-    compile("org.lwjgl:lwjgl-platform:$lwjglVersion}:natives-windows")
-    compile("org.lwjgl:lwjgl-platform:$lwjglVersion}:natives-linux")
-    compile("org.lwjgl:lwjgl-platform:$lwjglVersion}:natives-osx")
+    implementation("org.lwjgl:lwjgl:$lwjglVersion}")
+    implementation("org.lwjgl:lwjgl-platform:$lwjglVersion}:natives-windows")
+    implementation("org.lwjgl:lwjgl-platform:$lwjglVersion}:natives-linux")
+    implementation("org.lwjgl:lwjgl-platform:$lwjglVersion}:natives-osx")
 }
 
 application {
