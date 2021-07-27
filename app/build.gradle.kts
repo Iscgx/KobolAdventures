@@ -15,8 +15,8 @@ dependencies {
     implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-windows")
     implementation("org.lwjgl:lwjgl:$lwjglVersion:natives-linux")
     implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-linux")
-    implementation("org.lwjgl:lwjgl:$lwjglVersion:natives-osx")
-    implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-osx")
+    implementation("org.lwjgl:lwjgl:$lwjglVersion:natives-macos")
+    implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-macos")
 }
 
 application {
