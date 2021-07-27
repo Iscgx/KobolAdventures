@@ -10,9 +10,9 @@ dependencies {
     implementation("org.apache.commons:commons-text")
     val lwjglVersion = "2.8.0"
     implementation("org.lwjgl.lwjgl:lwjgl:$lwjglVersion")
-    implementation("org.lwjgl.lwgl:lwjgl-platform:$lwjglVersion:natives-windows")
-    implementation("org.lwjgl.lwgl:lwjgl-platform:$lwjglVersion:natives-linux")
-    implementation("org.lwjgl.lwgl:lwjgl-platform:$lwjglVersion:natives-osx")
+    implementation("org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-windows")
+    implementation("org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-linux")
+    implementation("org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-osx")
 }
 
 application {
