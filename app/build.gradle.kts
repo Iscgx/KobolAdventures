@@ -5,6 +5,7 @@ project.ext.lwjglVersion = "2.7.1"
 
 plugins {
     id("KobolAdventures.java-application-conventions")
+    java
 }
 
 dependencies {
