@@ -12,7 +12,7 @@ dependencies {
     implementation("org.lwjgl.lwjgl:lwjgl:$lwjglVersion")
     implementation("org.lwjgl.lwgl:lwjgl-platform:$lwjglVersion:natives-windows")
     implementation("org.lwjgl.lwgl:lwjgl-platform:$lwjglVersion:natives-linux")
-    implementation("org.lwjgl.lwgl:lwjgl-platform:$lwjglVersion:natives-macos")
+    implementation("org.lwjgl.lwgl:lwjgl-platform:$lwjglVersion:natives-osx")
 }
 
 application {
