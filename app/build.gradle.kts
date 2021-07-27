@@ -8,15 +8,11 @@ plugins {
 
 dependencies {
     implementation("org.apache.commons:commons-text")
-    val lwjglVersion = "3.2.3"
-    implementation("org.lwjgl:lwjgl:$lwjglVersion")
-    implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion")
-    implementation("org.lwjgl:lwjgl:$lwjglVersion:natives-windows")
-    implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-windows")
-    implementation("org.lwjgl:lwjgl:$lwjglVersion:natives-linux")
-    implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-linux")
-    implementation("org.lwjgl:lwjgl:$lwjglVersion:natives-macos")
-    implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-macos")
+    val lwjglVersion = "2.8.0"
+    implementation("org.lwjgl.lwjgl:lwjgl:$lwjglVersion")
+    implementation("org.lwjgl.lwgl:lwjgl-platform:$lwjglVersion:natives-windows")
+    implementation("org.lwjgl.lwgl:lwjgl-platform:$lwjglVersion:natives-linux")
+    implementation("org.lwjgl.lwgl:lwjgl-platform:$lwjglVersion:natives-macos")
 }
 
 application {
