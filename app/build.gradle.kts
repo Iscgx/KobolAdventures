@@ -19,5 +19,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass.set("finalproject.Main")
+    mainClass.set("KobolAdventures.app.Main")
 }
