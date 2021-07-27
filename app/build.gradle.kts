@@ -9,11 +9,10 @@ plugins {
 
 dependencies {
     implementation("org.apache.commons:commons-text")
-    implementation(project(":utilities"))
-    compile "org.lwjgl:lwjgl:${lwjglVersion}"
-    compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-windows"
-    compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-linux"
-    compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-osx"
+    compile("org.lwjgl:lwjgl:${lwjglVersion}")
+    compile("org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-windows")
+    compile("org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-linux")
+    compile("org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-osx")
 }
 
 application {
