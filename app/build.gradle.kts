@@ -14,7 +14,7 @@ dependencies {
     implementation("org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-windows")
     implementation("org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-linux")
     implementation("org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-osx")
-    implementation("slick-util:slick-util:1.0.0")
+    implementation("org.slick2d:slick2d-core:1.0.0")
 }
 
 application {
