@@ -8,4 +8,4 @@
  */
 
 rootProject.name = "KobolAdventures"
-include("app", "list", "utilities")
+include("app")
