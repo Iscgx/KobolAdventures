@@ -21,9 +21,9 @@ public class CameraController
 	public float dx = 0.0f;
 	public float dy = 0.0f;
 	public float dt = 0.0f;
-	public float lastTime = 0.0f;
-	public float time = 0.0f;
-	public float timeprotected = 0;
+	public long lastTime = 0;
+	public long time = 0;
+	public long timeprotected = 0;
 	
 	public float mouseSensitivity = 0.05f;
 	public float movementSpeed = 10.0f;
@@ -179,12 +179,14 @@ public class CameraController
 		
 		if((yaw>=0&&yaw<=180&&colliding[4]==0)||(yaw<=360&&yaw>=180&&colliding[3]==0))
 		{
-			position.x -= distance * (float)Math.sin(Math.toRadians(yaw));
+			float delta = distance * (float)Math.sin(Math.toRadians(yaw));
+			position.x -= delta;
 		}
 		
 		if((yaw>=90&&yaw<=270&&colliding[6]==0)||(((yaw<=90&&yaw>=0)||(yaw>=270&&yaw<=360))&&colliding[5]==0))
 		{
-	    	position.z += distance * (float)Math.cos(Math.toRadians(yaw));
+			float delta = distance * (float)Math.cos(Math.toRadians(yaw));
+	    	position.z += delta;
 		}
 	}
 	 

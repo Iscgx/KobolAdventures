@@ -8,6 +8,8 @@ public class Main
  
 	public static void main(String[] args)
 	{
+		SharedLibraryLoader.load();
+
 		System.out.println("start");
 		
 		GameTime GlobalGameTime = GameTime.getSystemTime();

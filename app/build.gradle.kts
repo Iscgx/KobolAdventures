@@ -8,7 +8,7 @@ plugins {
 
 dependencies {
     implementation("org.apache.commons:commons-text")
-    val lwjglVersion = "2.8.0"
+    val lwjglVersion = "2.9.3"
     implementation("org.lwjgl.lwjgl:lwjgl:$lwjglVersion")
     implementation("org.lwjgl.lwjgl:lwjgl_util:$lwjglVersion")
     implementation("org.lwjgl.lwjgl:lwjgl-platform:$lwjglVersion:natives-windows")

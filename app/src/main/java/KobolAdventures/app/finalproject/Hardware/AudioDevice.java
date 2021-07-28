@@ -130,30 +130,30 @@ public class AudioDevice
 	  
 	  public static void play(AudioID music,float x, float y, float z ) 
 	  {
-		  int actual;
-		  int position = music.getPosition();
+		//   int actual;
+		//   int position = music.getPosition();
 	
-		  // Load the wav data.
-		  if(singleton == 1)
-		  {
-		    if(loadALData() == AL10.AL_FALSE) {
-		      System.out.println("Error loading data.");
-		      return;
-		    }
-		    singleton = 2;
-		  }
-		    setListenerValues();
+		//   // Load the wav data.
+		//   if(singleton == 1)
+		//   {
+		//     if(loadALData() == AL10.AL_FALSE) {
+		//       System.out.println("Error loading data.");
+		//       return;
+		//     }
+		//     singleton = 2;
+		//   }
+		//     setListenerValues();
 		
-		    actual  = AL10.alGetSourcei(source.get(position), AL10.AL_SOURCE_STATE);
-			 if(actual != AL10.AL_PLAYING)
-			  {
-			    	sourcePos.put(position*3+0,0);
-			    	sourcePos.put(position*3+1,0);
-			    	sourcePos.put(position*3+2,0);
+		//     actual  = AL10.alGetSourcei(source.get(position), AL10.AL_SOURCE_STATE);
+		// 	 if(actual != AL10.AL_PLAYING)
+		// 	  {
+		// 	    	sourcePos.put(position*3+0,0);
+		// 	    	sourcePos.put(position*3+1,0);
+		// 	    	sourcePos.put(position*3+2,0);
 			    	
-			    	AL10.alSource(source.get(position), AL10.AL_POSITION, (FloatBuffer) sourcePos.position(position*3));
-			        AL10.alSourcePlay(source.get(position));
-			   }	
+		// 	    	AL10.alSource(source.get(position), AL10.AL_POSITION, (FloatBuffer) sourcePos.position(position*3));
+		// 	        AL10.alSourcePlay(source.get(position));
+		// 	   }	
 			
 			
 	  }

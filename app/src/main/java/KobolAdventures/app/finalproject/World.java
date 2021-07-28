@@ -173,9 +173,14 @@ public class World
         {
 			if (Keyboard.isKeyDown(Keyboard.KEY_A)||Keyboard.isKeyDown(Keyboard.KEY_D))
 				Camera.dt/=2;
-            Camera.walkForward(Camera.movementSpeed * Camera.dt,Player.getThisPlayer().collisionDirection);
+            Camera.walkForward(Camera.movementSpeed * Camera.dt, Player.getThisPlayer().collisionDirection);
             updateCull = true;
-            Player.getThisPlayer().updatePosition(new Vector3f(Camera.getPosition().x-.4f,Camera.getPosition().y,Camera.getPosition().z-.4f));
+			Vector3f newPosition = new Vector3f(
+					Camera.getPosition().x-10f,
+					Camera.getPosition().y,
+					Camera.getPosition().z-10f);
+            //Player.getThisPlayer().updatePosition(new Vector3f(Camera.getPosition().x-.4f,Camera.getPosition().y,Camera.getPosition().z-.4f));
+            Player.getThisPlayer().updatePosition(newPosition);
         }
 		
 		
